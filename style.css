@@ -1,68 +1,109 @@
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    color: #333;
 }
 
 h1 {
-  margin-top: 20px;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
 }
 
 .list-container {
-  flex: 1;
-  margin: 0 20px;
+    flex: 1;
+    margin: 0 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.list-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
 }
 
 .product-list {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .product-list li {
-  padding: 10px;
-  margin: 5px 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .product-list li:hover {
-  background-color: #e0e0e0;
+    background-color: #e0f7ff;
+    transform: scale(1.02);
 }
 
 .comparison-zone {
-  margin-top: 20px;
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.comparison-zone h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
 .drop-zone {
-  width: 400px;
-  height: 100px;
-  margin: 10px auto;
-  padding: 10px;
-  border: 2px dashed #ccc;
-  background-color: #fafafa;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .drop-zone.over {
-  border-color: #007bff;
-  background-color: #e0f7ff;
+    border-color: #0056b3;
+    background-color: rgba(224, 247, 255, 0.8);
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-  cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
 }
