@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de Productos Químicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Comparación de Productos Químicos</h1>
+    <div class="container">
+        <div class="list-container">
+            <h2>Fungicidas</h2>
+            <ul id="fungicidas" class="product-list">
+                <li draggable="true" data-tipo="fungicida" data-nombre="Metalaxil + Propamocarb">Metalaxil + Propamocarb</li>
+                <li draggable="true" data-tipo="fungicida" data-nombre="Tebuconazol">Tebuconazol</li>
+                <li draggable="true" data-tipo="fungicida" data-nombre="Dimetimorph">Dimetimorph</li>
+                <li draggable="true" data-tipo="fungicida" data-nombre="Difeconazole">Difeconazole</li>
+                <li draggable="true" data-tipo="fungicida" data-nombre="Azoxystrobin">Azoxystrobin</li>
+                <li draggable="true" data-tipo="fungicida" data-nombre="Clorotalonil">Clorotalonil</li>
+            </ul>
+        </div>
+        <div class="list-container">
+            <h2>Insecticidas</h2>
+            <ul id="insecticidas" class="product-list">
+                <li draggable="true" data-tipo="insecticida" data-nombre="Clorpirifos + Cipermetrina">Clorpirifos + Cipermetrina</li>
+                <li draggable="true" data-tipo="insecticida" data-nombre="Deltrametrina">Deltrametrina</li>
+                <li draggable="true" data-tipo="insecticida" data-nombre="Lambda-chyhalotrin">Lambda-chyhalotrin</li>
+                <li draggable="true" data-tipo="insecticida" data-nombre="Imidacloprid">Imidacloprid</li>
+                <li draggable="true" data-tipo="insecticida" data-nombre="Malathion">Malathion</li>
+            </ul>
+        </div>
+        <div class="list-container">
+            <h2>Herbicidas</h2>
+            <ul id="herbicidas" class="product-list">
+                <li draggable="true" data-tipo="herbicida" data-nombre="Nicosulfuron">Nicosulfuron</li>
+                <li draggable="true" data-tipo="herbicida" data-nombre="Tifensulfuron - methyl">Tifensulfuron - methyl</li>
+                <li draggable="true" data-tipo="herbicida" data-nombre="Glifosato">Glifosato</li>
+            </ul>
+        </div>
+    </div>
+    <div class="comparison-zone">
+        <h2>Zona de Comparación</h2>
+        <div id="comparison-area" class="drop-zone"></div>
+        <button id="compare-btn">Comparar</button>
+        <button id="refresh-btn">Refrescar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
